@@ -28,11 +28,11 @@
          * The template
          * 
          * @access  public
-         * @param   string  $file_ID  the view file
+         * @param   string  $file_name  the view file
          */
-		public function load_template( $file_ID, $plugin = false )
+		public function load_template( $file_name )
         {
-            $this->build_template( $file_ID, 'contents', $plugin );
+            $this->build_template( $file_name, 'contents' );
 		}
         
         
@@ -40,20 +40,15 @@
          * Build the template
          * 
          * @access  private
-         * @param   string      $file_ID
+         * @param   string      $file_name
          * @param   string      $location
          */
-        private function build_template( $file_ID, $location, $plugin = false )
+        private function build_template( $file_name, $location )
         {
-            if ( is_numeric( $file_ID ) )
-            {
-                // grab the file contents from the database
-                // @notes coming soon
-            }
-            else if ( $file_ID != '' )
+            if ( $file_name != '' )
             {   
                 // format the location
-                $file = ( $plugin ? Config::ABSOLUTE_PATH . '/' . Config::DIR_PLUGINS : Config::DIR_VIEWS ) . '/' . $file_ID . Config::TEMPLATE_EXT;
+                $file = Config::DIR_VIEWS . '/' . $file_name . Config::TEMPLATE_EXT;
                 
                 if ( is_file( $file ) )
                 {

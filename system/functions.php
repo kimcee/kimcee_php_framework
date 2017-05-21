@@ -10,13 +10,13 @@
      * 
      * @param   string      $template   path to template file
      * @param   array       $variables  associative array of variables
-     * @param   string      $foreach    key for the foreach element
-     * @param   boolean     $plugin     if this is a plugin set to true
+     * @param   array       $if         associative array of if statements
+     * @param   array       $foreach    associative array of foreach elements
      */
-    function quick_template( $template, $variables = null, $if = '', $foreach = '', $plugin = false )
+    function quick_template( $template, $variables = null, $if = null, $foreach = null )
     {
         $tpl = new Template;
-        $tpl->load_template( $template, $plugin );
+        $tpl->load_template( $template );
         
         if ( !empty( $variables ) && is_array( $variables ) )
         {

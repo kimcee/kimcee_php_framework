@@ -18,9 +18,9 @@
         const DB_PREFIX       = '';             // [p] in database class gets replaced with this value
 
         // application specific
-        const ABSOLUTE_PATH   = '';             // system file path, no trailing slash
-        const BASE_URL        = '';             // url to index of site, no trailing slash
-        const SUB_DIR         = '';             // sub-directory starting with slash, no trailing slash
+        const ABSOLUTE_PATH   = '/home/kimceeinfo/public_html'; // system file path, no trailing slash
+        const BASE_URL        = 'http://kimcee.info'; // url to index of site, no trailing slash
+        const SUB_DIR         = '/framework';   // sub-directory starting with slash, no trailing slash
         const SITE_NAME       = 'Kimcee';       // name of site
         const SESSION_NAME    = 'kimcee';       // session name
         const HOME            = 'home';         // default controller
