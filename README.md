@@ -26,10 +26,9 @@ Create a new file in the root of your application and name it `.application.php`
 1. SITE_NAME *This value is passed as a variable {site_name} to all templates*
 2. SESSION_NAME
 3. HOME *This is the home controller file name, exmaple: value of `home` would render as `controllers/home.php`
-1. ABSOLUTE_PATH *(example: /public_html/)*
-2. BASE_URL *(example: http://www.domain.com)*
-3. SUB_DIR *(example: /subdir)*
-4. SITE_NAME
+4. ABSOLUTE_PATH *(example: /public_html/)*
+5. BASE_URL *(example: http://www.domain.com)*
+6. SUB_DIR *(example: /subdir)*
 
 ## Getting Started
 
