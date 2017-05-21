@@ -190,3 +190,51 @@ Example usage in controller:
         ) 
     );
 ```
+
+# Helper Files
+
+For application specific helper files (functions or classes) you can add them in the `helpers/` directory.  Files in this directory will be auto included in the framework.
+
+# User Login/Logout
+
+By default I included a simple user login/logout function which requires a MySQL database.  The following helper files were created for the user login/logout:
+1. helpers/functions.php
+2. helpers/user.php
+
+Here is the sql I used for this implementation.  Register function is being worked on.
+
+```sql
+--
+-- Table structure for table `kimcee_users`
+--
+
+CREATE TABLE IF NOT EXISTS `kimcee_users` (
+  `id` int(24) NOT NULL AUTO_INCREMENT,
+  `status` tinyint(1) NOT NULL DEFAULT '0',
+  `super_admin` tinyint(1) NOT NULL DEFAULT '0',
+  `email` varchar(240) NOT NULL,
+  `password` varchar(240) NOT NULL,
+  `token` varchar(240) NOT NULL,
+  `token_expires` varchar(50) NOT NULL,
+  `reg_date` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `email` (`email`),
+  UNIQUE KEY `token` (`token`),
+  KEY `status` (`status`),
+  KEY `super_admin` (`super_admin`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Table structure for table `kimcee_users_meta`
+--
+
+CREATE TABLE IF NOT EXISTS `kimcee_users_meta` (
+  `id` int(24) NOT NULL AUTO_INCREMENT,
+  `user` int(24) NOT NULL,
+  `key` varchar(100) NOT NULL,
+  `value` text NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user` (`user`),
+  KEY `key` (`key`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
+```
