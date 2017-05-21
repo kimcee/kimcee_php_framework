@@ -159,10 +159,10 @@ The Kimcee PHP Framework has its own templating system.  The idea is to force de
 ```
 
 5. **Quick Templates** Sometimes you just need a simple template loaded into a variable in which case using the function `quick_templates()` which accepts four (4) parameters
-  1. $template *string*
-  2. $variables *array* (optional)
-  3. $if *array* (optional)
-  4. $foreach *array* (optional)
+  * $template *string*
+  * $variables *array* (optional)
+  * $if *array* (optional)
+  * $foreach *array* (optional)
 
 Example usage in controller:
 ```php
