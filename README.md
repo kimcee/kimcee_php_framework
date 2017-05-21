@@ -1,7 +1,7 @@
 # Kimcee PHP Framework
 * [Setup](#setup)
 * [Getting Started](#getting-started)
-* [Template System](#template-system)
+* [Templating System](#templating-system)
 
 ## Setup
 
