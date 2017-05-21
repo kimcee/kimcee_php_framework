@@ -7,12 +7,12 @@ Create a new file in the root of your application and name it `.application.php`
 <?php
 
     // application specific
-    define( 'SITE_NAME',     '' ); // Site Name
-    define( 'SESSION_NAME',  '' ); // session name
-    define( 'HOME',          '' ); // default controller
-    define( 'ABSOLUTE_PATH', '' ); // system file path, no trailing slash
-    define( 'BASE_URL',      '' ); // url to index of site, no trailing slash
-    define( 'SUB_DIR',       '' ); // sub-directory starting with slash, no trailing slash
+    define( 'SITE_NAME',       '' ); // Site Name
+    define( 'SESSION_NAME',    '' ); // session name
+    define( 'HOME_CONTROLLER', '' ); // default controller
+    define( 'ABSOLUTE_PATH',   '' ); // system file path, no trailing slash
+    define( 'BASE_URL',        '' ); // url to index of site, no trailing slash
+    define( 'SUB_DIR',         '' ); // sub-directory starting with slash, no trailing slash
 
     // database
     define( 'DB_HOST',   '' ); // database host
