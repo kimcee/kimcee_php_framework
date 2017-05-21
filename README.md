@@ -24,18 +24,18 @@ Create a new file in the root of your application and name it `.application.php`
 
 ## Getting Started
 
-By default, controller/home.php will be called which contains the class Home.  In this class the default function is action_index()
+By default, `controller/home.php` will be called which contains the class Home.  In this class the default function is `action_index()`
 
 ## Creating New Pages
 
-To create a new page like /about you would need to create the following
+To create a new page like `/about` you would need to create the following
 1. controllers/about.php
 2. views/about/index.html
 3. views/about/about.js *(Auto added to the page so you can use it for javascript specific to this page)*
 
 #### About Controller
 
-For controllers/about.php you'll need the following:
+For `controllers/about.php` you'll need the following:
 
 ```php
 <?php
@@ -65,7 +65,7 @@ For controllers/about.php you'll need the following:
 
 ####  About View Template
 
-For views/about/index.html
+For `views/about/index.html`
 
 ```html
     <p>Hello, this is a new page and here is a variable: {var}</p>
