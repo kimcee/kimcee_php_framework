@@ -11,19 +11,19 @@
         const DEBUG           = true;           // used in debug class and error_reporting (boolean)
         
         // database
-        const DB_HOST         = '';             // database host
-        const DB_USER         = '';             // database user
-        const DB_PASS         = '';             // database password
-        const DB_NAME         = '';             // database name
-        const DB_PREFIX       = '';             // [p] in database class gets replaced with this value
+        const DB_HOST         = DB_HOST;        // database host
+        const DB_USER         = DB_USER;        // database user
+        const DB_PASS         = DB_PASS;        // database password
+        const DB_NAME         = DB_NAME;        // database name
+        const DB_PREFIX       = DB_PREFIX;      // [p] in database class gets replaced with this value
 
         // application specific
-        const ABSOLUTE_PATH   = '/home/kimceeinfo/public_html'; // system file path, no trailing slash
-        const BASE_URL        = 'http://kimcee.info'; // url to index of site, no trailing slash
-        const SUB_DIR         = '/framework';   // sub-directory starting with slash, no trailing slash
-        const SITE_NAME       = 'Kimcee';       // name of site
-        const SESSION_NAME    = 'kimcee';       // session name
-        const HOME            = 'home';         // default controller
+        const ABSOLUTE_PATH   = ABSOLUTE_PATH;  // system file path, no trailing slash
+        const BASE_URL        = BASE_URL;       // url to index of site, no trailing slash
+        const SUB_DIR         = SUB_DIR;        // sub-directory starting with slash, no trailing slash
+        const SITE_NAME       = SITE_NAME;      // name of site
+        const SESSION_NAME    = SESSION_NAME;   // session name
+        const HOME            = HOME_CONTROLLER;// default controller
 
         // Router
         const DIR_THEMES      = 'themes';       // themes folder

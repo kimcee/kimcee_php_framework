@@ -12,6 +12,7 @@
     date_default_timezone_set( 'America/New_York' );
 
     // include all system files
+    include( '.application.php'        );
     include( 'system/config.php'       );
     include( 'system/debug.php'        );
     include( 'system/functions.php'    );

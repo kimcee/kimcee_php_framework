@@ -2,18 +2,34 @@
 
 ## Setup
 
-system/config.php set the following
+Create a new file in the root of your application and name it `.application.php`.  Then add the following:
+```php
+<?php
+
+    // application specific
+    define( 'SITE_NAME',     '' ); // Site Name
+    define( 'SESSION_NAME',  '' ); // session name
+    define( 'HOME',          '' ); // default controller
+    define( 'ABSOLUTE_PATH', '' ); // system file path, no trailing slash
+    define( 'BASE_URL',      '' ); // url to index of site, no trailing slash
+    define( 'SUB_DIR',       '' ); // sub-directory starting with slash, no trailing slash
+
+    // database
+    define( 'DB_HOST',   '' ); // database host
+    define( 'DB_USER',   '' ); // database user
+    define( 'DB_PASS',   '' ); // database password
+    define( 'DB_NAME',   '' ); // database name
+    define( 'DB_PREFIX', '' ); // [p] in database class gets replaced with this value
+```
+
+**
+1. SITE_NAME *This value is passed as a variable {site_name} to all templates*
+2. SESSION_NAME
+3. HOME *This is the home controller file name, exmaple: value of `home` would render as `controllers/home.php`
 1. ABSOLUTE_PATH *(example: /public_html/)*
 2. BASE_URL *(example: http://www.domain.com)*
 3. SUB_DIR *(example: /subdir)*
 4. SITE_NAME
-
-If using a MySQL Database, also set these
-1. DB_HOST
-2. DB_USER
-3. DB_PASS
-4. DB_NAME
-5. DB_PREFIX
 
 ## Getting Started
 
@@ -31,6 +47,7 @@ To create a new page like /about you would need to create the following
 For controllers/about.php you'll need the following:
 
 ```php
+<?php
     defined( 'CORE_STRAP' ) or die( 'No direct script access.' );
 
     class About extends Theme
@@ -68,6 +85,7 @@ For views/about/index.html
 If your new page will need its own model you can add it in `model/about.php` 
 
 ```php
+<?php
     defined( 'CORE_STRAP' ) or die( 'No direct script access.' );
 
     class Home_Model extends Database
