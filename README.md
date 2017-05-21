@@ -1,4 +1,7 @@
 # Kimcee PHP Framework
+* [Setup](#setup)
+* [Getting Started](#getting-started)
+* [Template System](#template-system)
 
 ## Setup
 
@@ -21,7 +24,6 @@ Create a new file in the root of your application *(same location as index.php)*
     define( 'DB_NAME',   '' ); // database name
     define( 'DB_PREFIX', '' ); // [p] in database class gets replaced with this value, example: 'kimcee_' would render [p]pages as kimcee_pages
 ```
-
 
 # Getting Started
 
