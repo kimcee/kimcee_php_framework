@@ -1,0 +1,30 @@
+
+<div class="container">
+    <h1>Hello {name}!</h1>
+    <p>This is a test</p>
+
+
+    <IF show>
+        <p>These are some things I need</p>
+        <ul>
+        <FOREACH my_loop>
+            <li>Item: {name}</li>
+        </FOREACH my_loop>
+        </ul>
+    </IF show>
+
+
+    <IF empty>
+        <p>No cats</p>
+    </IF empty>
+
+    <hr />
+
+    <p><code>Here is the second template:</code></p>
+
+    {welcome_template}
+    
+    <h3>Quick Template Test</h3>
+    {quick_template}
+    
+</div>
