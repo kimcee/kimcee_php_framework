@@ -2,7 +2,7 @@
 
 ## Setup
 
-Create a new file in the root of your application and name it `.application.php`.  Then add the following:
+Create a new file in the root of your application *(same location as index.php)* and name it `.application.php`.  Then add the following:
 ```php
 <?php
 
