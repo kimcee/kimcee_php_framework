@@ -2,6 +2,8 @@
 * [Setup](#setup)
 * [Getting Started](#getting-started)
 * [Templating System](#templating-system)
+* [Helper Files](#helper-files)
+* [User Login/Logout](#user-loginlogout)
 
 ## Setup
 
