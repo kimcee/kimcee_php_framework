@@ -7,28 +7,20 @@ Create a new file in the root of your application and name it `.application.php`
 <?php
 
     // application specific
-    define( 'SITE_NAME',       '' ); // Site Name
-    define( 'SESSION_NAME',    '' ); // session name
-    define( 'HOME_CONTROLLER', '' ); // default controller
-    define( 'ABSOLUTE_PATH',   '' ); // system file path, no trailing slash
-    define( 'BASE_URL',        '' ); // url to index of site, no trailing slash
-    define( 'SUB_DIR',         '' ); // sub-directory starting with slash, no trailing slash
+    define( 'SITE_NAME',       'Kimcee' ); // Site Name
+    define( 'SESSION_NAME',    'kimcee' ); // session name
+    define( 'HOME_CONTROLLER', 'home' ); // default controller: 'home' equates to controllers/home.php
+    define( 'ABSOLUTE_PATH',   '' ); // system file path, no trailing slash, example: '/home/servername/public_html/'
+    define( 'BASE_URL',        '' ); // url to index of site, no trailing slash, example: 'http://domain.com'
+    define( 'SUB_DIR',         '' ); // sub-directory starting with slash, no trailing slash, example: '/subdir'
 
     // database
     define( 'DB_HOST',   '' ); // database host
     define( 'DB_USER',   '' ); // database user
     define( 'DB_PASS',   '' ); // database password
     define( 'DB_NAME',   '' ); // database name
-    define( 'DB_PREFIX', '' ); // [p] in database class gets replaced with this value
+    define( 'DB_PREFIX', '' ); // [p] in database class gets replaced with this value, example: 'kimcee_' would render [p]pages as kimcee_pages
 ```
-
-**
-1. SITE_NAME *This value is passed as a variable {site_name} to all templates*
-2. SESSION_NAME
-3. HOME *This is the home controller file name, exmaple: value of `home` would render as `controllers/home.php`
-4. ABSOLUTE_PATH *(example: /public_html/)*
-5. BASE_URL *(example: http://www.domain.com)*
-6. SUB_DIR *(example: /subdir)*
 
 ## Getting Started
 
