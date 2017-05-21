@@ -1,4 +1,4 @@
-# kimcee_php_framework
+# Kimcee PHP Framework
 
 ## Setup
 
@@ -22,7 +22,8 @@ Create a new file in the root of your application *(same location as index.php)*
     define( 'DB_PREFIX', '' ); // [p] in database class gets replaced with this value, example: 'kimcee_' would render [p]pages as kimcee_pages
 ```
 
-## Getting Started
+
+# Getting Started
 
 By default, `controller/home.php` will be called which contains the class Home.  In this class the default function is `action_index()`
 
