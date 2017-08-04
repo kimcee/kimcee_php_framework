@@ -62,7 +62,7 @@
 
             if ( is_array( $url ) )
             {
-                $trim = $url[ 1 ];
+                $trim = isset( $url[ 1 ] ) ? $url[ 1 ] : $url[ 0 ];
             }
             
             $url = $trim != '' ? trim( $trim, '/' ) : '';
