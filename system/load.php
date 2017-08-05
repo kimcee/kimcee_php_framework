@@ -27,15 +27,15 @@
     include( 'system/model.php'        );
     include( 'system/router.php'       );
 
+    // initate sessions
+    session_name( Config::SESSION_NAME );
+    session_start();
+
     // loop through all helper files and include
     foreach ( glob( 'helpers/*.php' ) as $helper_file )
     {
         include( $helper_file );
     }
-
-    // initate sessions
-    session_name( Config::SESSION_NAME );
-    session_start();
     
     // check for debug
     if ( Config::DEBUG )

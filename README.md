@@ -203,7 +203,7 @@ By default I included a simple user login/logout function which requires a MySQL
 1. helpers/functions.php
 2. helpers/user.php
 
-Here is the sql I used for this implementation.  Register function is being worked on.
+Here is the sql I used for this implementation.  Register function is being worked on.  Once added, then insert a new entry into the users table.  Only need to define the email and password.  The password needs to be set with SHA1.
 
 ```sql
 --
