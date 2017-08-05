@@ -200,9 +200,13 @@ For application specific helper files (functions or classes) you can add them in
 # User Login/Logout
 
 By default I included a simple user login/logout function which requires a MySQL database.  The following helper files were created for the user login/logout:
-1. helpers/functions.php
-2. helpers/user.php
-3. helpers/z_load.php 
+1. controllers/admin.php
+2. models/admin.php
+3. views/admin.js
+4. views/index.html
+5. helpers/functions.php
+6. helpers/user.php
+7. helpers/z_load.php 
 
 Here is the sql I used for this implementation.  Register function is being worked on.  Once added, then insert a new entry into the users table.  Only need to define the email and password.  The password needs to be set with SHA1.
 
