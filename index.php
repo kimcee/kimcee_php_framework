@@ -5,7 +5,7 @@
 // @location /
 //-------------------------------------------------------------------------------
 
-    // core_strap
+    // will be used to limit direct script access
     define( 'CORE_STRAP', true );
 
     // system files
